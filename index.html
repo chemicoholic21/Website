@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniya Souza - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="glow-pointer"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="profile-pic-container">
+                <img src="profile.jpg" alt="Taniya Souza" class="profile-pic">
+            </div>
+            <h1 class="name">Taniya Souza</h1>
+            <div class="running-text">
+                <p>Aspiring Software Engineer | Tech Enthusiast | Lifelong Learner</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Taniya Souza, an aspiring software engineer with a passion for technology, AI, and cloud computing.
+                I enjoy creating innovative solutions and contributing to open-source projects.
+                Currently, I am pursuing my studies in Bengaluru and actively working on several exciting projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="education section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Dr. Ambedkar Institute of Technology, Bengaluru</h3>
+                <p>Bachelor of Engineering in Computer Science (2020 - Present)</p>
+                <p>Relevant Coursework: AI, Machine Learning, Cloud Computing, Software Engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>AI Personalized Fitness Web App</h3>
+                <p>A real-time feedback system using Mediapipe, OpenCV, and Python to assist users with fitness poses.</p>
+            </div>
+            <div class="card">
+                <h3>Travel Planner with Generative AI</h3>
+                <p>A smart travel planner that generates a travel schedule and weather reports using AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media" class="social-media section">
+        <div class="container">
+            <h2>Let's Connect!</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/taniya-souza-284167203/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/chemicoholic21" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/Tania01010101" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/timetodosomesketchyshit/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Taniya Souza. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Glow Mouse Pointer
+        const pointer = document.querySelector('.glow-pointer');
+
+        document.addEventListener('mousemove', (e) => {
+            pointer.style.left = `${e.pageX}px`;
+            pointer.style.top = `${e.pageY}px`;
+        });
+    </script>
+</body>
+</html>

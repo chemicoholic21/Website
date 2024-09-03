@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    cursor: none;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-pic-container {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff6ec7;
+}
+
+.name {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    position: relative;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7;
+    }
+    to {
+        text-shadow: 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7, 0 0 50px #ff6ec7;
+    }
+}
+
+.running-text p {
+    font-size: 2.4em;
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff6ec7;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6ec7;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.social-media .social-icons {
+    text-align: center;
+}
+
+.social-media .social-icons a {
+    color: #e0e0e0;
+    font-size: 2em;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media .social-icons a:hover {
+    color: #ff6ec7;
+    transform: scale(1.2);
+}
+
+.footer {
+    background: #333;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.glow-pointer {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background: #ff6ec7;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
+    z-index: 1000; /* Ensure the pointer stays above other elements */
+}
